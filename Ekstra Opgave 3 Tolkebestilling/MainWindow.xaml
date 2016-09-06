@@ -1,0 +1,175 @@
+﻿<Window x:Class="Ekstra_Opgave_3_Tolkebestilling.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ekstra_Opgave_3_Tolkebestilling"
+        mc:Ignorable="d"
+        Title="Formular til tolkebestilling" Height="1765.121" Width="525">
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid>
+
+            <Label x:Name="lblTitle" Content="Formular til tolkebestilling" HorizontalAlignment="Left" Margin="37,15,0,0" VerticalAlignment="Top" FontSize="36" Foreground="#FF0041CB" FontWeight="SemiBold"/>
+
+            <Separator HorizontalAlignment="Left" Height="25" Margin="37,57,0,0" VerticalAlignment="Top" Width="440"/>
+
+            <Label x:Name="lblLogEmail" Foreground="#FF0041CB" Content="Email*" HorizontalAlignment="Left" Height="27" Margin="55,78,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtLogEmail" HorizontalAlignment="Left" Height="27" Margin="103,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+            <Label x:Name="lblLogPassword" Content="Password*" Foreground="#FF0041CB" HorizontalAlignment="Left" Height="27" Margin="228,78,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtLogPassword" HorizontalAlignment="Left" Height="27" Margin="298,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+            <Button x:Name="btnFillFormula" Content="Udfyld formularen" HorizontalAlignment="Left" Margin="192,117,0,0" VerticalAlignment="Top" Width="114" Height="39" Click="btnFillFormula_Click"/>
+
+            <Separator HorizontalAlignment="Left" Height="25" Margin="37,156,0,0" VerticalAlignment="Top" Width="440"/>
+
+            <GroupBox x:Name="gbRequestor" Header="Rekvirent" Margin="64,186,0,0" Height="690" VerticalAlignment="Top" HorizontalAlignment="Left" Width="391">
+                <Grid Margin="0,0,-2,-3" Height="684" VerticalAlignment="Top">
+                    <Label x:Name="lblCompany" Foreground="#FF0041CB" Content="Virksomhed/organisation*" Height="27" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtCompany" HorizontalAlignment="Left" Height="27" Margin="221,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblEmail" Foreground="#FF0041CB" Content="E-mail*" Height="27" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="27" Margin="221,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblDepartment" Foreground="#FF0041CB" Content="Afdeling, fx på et sugehus" Height="27" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtDepartment" HorizontalAlignment="Left" Height="27" Margin="221,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblIntrance" Foreground="#FF0041CB" Content="Indgang, bygning, fx på et sygehus" Height="27" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtIntrance" HorizontalAlignment="Left" Height="27" Margin="221,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblLocale" Foreground="#FF0041CB" Content="Lokale eller anden adresse tilføjelse" Height="27" HorizontalAlignment="Left" Margin="10,138,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtLocale" HorizontalAlignment="Left" Height="27" Margin="221,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblOuternr" Foreground="#FF0041CB" Content="YDER nr (læger)" Height="27" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtOuternr" HorizontalAlignment="Left" Height="27" Margin="221,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblRAdress" Foreground="#FF0041CB" Content="Adresse*" Height="27" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtRAdress" HorizontalAlignment="Left" Height="27" Margin="221,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblRPostalcode" Foreground="#FF0041CB" Content="Postnummer*" Height="27" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtRPostalcode" HorizontalAlignment="Left" Height="27" Margin="221,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblRCity" Foreground="#FF0041CB" Content="By*" Height="27" HorizontalAlignment="Left" Margin="10,266,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtRCity" HorizontalAlignment="Left" Height="27" Margin="221,266,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblCountry" Foreground="#FF0041CB" Content="Land*" Height="27" HorizontalAlignment="Left" Margin="10,298,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtCountry" HorizontalAlignment="Left" Height="27" Margin="221,298,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblPhoneMain" Foreground="#FF0041CB" Content="Telefon hovednummer(*)" Height="27" HorizontalAlignment="Left" Margin="10,330,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtPhoneMain" HorizontalAlignment="Left" Height="27" Margin="221,330,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="lblPhoneNotice"  HorizontalAlignment="Left" Margin="17,343,0,0" VerticalAlignment="Top" Height="31" Width="182" FontSize="8">
+                        <TextBlock>
+                         Bemærk: Det er nok at udfylde bare 1 <LineBreak></LineBreak>  af de 3 telefonnumre
+                        </TextBlock>
+                    </Label>
+
+                    <Label x:Name="lblPhoneDirect" Height="27" Foreground="#FF0041CB" Content="Telefon direkte(*)" HorizontalAlignment="Left" Margin="10,379,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtPhoneDirect" HorizontalAlignment="Left" Height="27" Margin="221,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="lblPhoneNotice2"  HorizontalAlignment="Left" Margin="17,392,0,0" VerticalAlignment="Top" Height="31" Width="182" FontSize="8">
+                        <TextBlock>
+                         Bemærk: Det er nok at udfylde bare 1 <LineBreak></LineBreak>  af de 3 telefonnumre
+                        </TextBlock>
+                    </Label>
+
+                    <Label x:Name="lblPhoneMobile" Height="27" Foreground="#FF0041CB" Content="Mobil(*)" HorizontalAlignment="Left" Margin="10,428,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtPhoneMobile" HorizontalAlignment="Left" Height="27" Margin="221,428,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="lblPhoneNotice3"  HorizontalAlignment="Left" Margin="17,441,0,0" VerticalAlignment="Top" Height="31" Width="182" FontSize="8">
+                        <TextBlock>
+                         Bemærk: Det er nok at udfylde bare 1 <LineBreak></LineBreak>  af de 3 telefonnumre
+                        </TextBlock>
+                    </Label>
+
+                    <Label x:Name="lblEAN" Height="27" Foreground="#FF0041CB" Content="EAN-lokationsnummer" HorizontalAlignment="Left" Margin="10,477,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtEAN" HorizontalAlignment="Left" Height="27" Margin="221,477,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblContact" Height="27" Foreground="#FF0041CB" Content="Ref./kontaktperson*" HorizontalAlignment="Left" Margin="10,509,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtContact" Height="27" HorizontalAlignment="Left" Margin="221,509,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblRequisition" Content="Rekvisionsnummer" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,541,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtRequisition" HorizontalAlignment="Left" Height="27" Margin="221,541,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblInvoiceadress" Content="Fakturaadresse" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,573,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtInvoiceadress" HorizontalAlignment="Left" Height="27" Margin="221,573,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblInvoicePostalcode" Height="27" Foreground="#FF0041CB" Content="Postnummer (faktura)" HorizontalAlignment="Left" Margin="10,605,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtInvoicePostalcode" HorizontalAlignment="Left" Height="23" Margin="221,605,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblInvoiceCity" Content="By (faktura)" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,637,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtInvoiceCity" HorizontalAlignment="Left" Height="27" Margin="221,633,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox x:Name="gbInterpreter" Header="Tolk" Margin="64,881,0,0" Height="366" VerticalAlignment="Top" HorizontalAlignment="Left" Width="391">
+                <Grid Margin="0,0,0,-3">
+                    <Label x:Name="lblDate" Content="Dato*" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top"/>
+                    <Calendar HorizontalAlignment="Left" Margin="190,10,0,0" VerticalAlignment="Top"/>
+
+                    <Label x:Name="lblTimeStart" Content="Mødetid start*" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,183,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtTimeStart" HorizontalAlignment="Left" Height="27" Margin="220,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblTimeEnd" Content="Forventet mødetid slut*" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtTimeEnd" HorizontalAlignment="Left" Height="27" Margin="220,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblLanguage" Content="Sprog(*)" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,247,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cbLanguage" IsEditable="True" IsReadOnly="True" Text="Vælg sprog..." Height="27" HorizontalAlignment="Left" Margin="220,247,0,0" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblLanguageExtra" Content="Sprog(*), hvis ikke oplyst" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,279,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtLanguageExtra" HorizontalAlignment="Left" Height="27" Margin="220,279,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblInterpreterType" Content="Tolkningstype*" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,311,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cbInterpreterType" Height="27" IsEditable="True" IsReadOnly="True" Text="Vælg type af tolk.." HorizontalAlignment="Left" Margin="220,311,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="Fysisk tolkning"/>
+                        <ComboBoxItem Content="Videotolkning"/>
+                        <ComboBoxItem Content="Telefontolkning"/>
+                    </ComboBox>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox x:Name="gbClientel" Header="Klienten" HorizontalAlignment="Left" Margin="64,1252,0,0" VerticalAlignment="Top" Width="391" Height="351">
+                <Grid>
+                    <Label x:Name="lblClientName" Content="Navn*" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtClientName" HorizontalAlignment="Left" Height="27" Margin="218,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblClientAdress" Content="Adresse" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtClientAdress" HorizontalAlignment="Left" Height="27" Margin="218,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblClientCity" Content="By" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtClientCity" HorizontalAlignment="Left" Height="27" Margin="218,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <Label x:Name="lblCPR" Content="CPR(*)" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lblCPRNote" HorizontalAlignment="Left" Margin="17,119,0,0" VerticalAlignment="Top" FontSize="8">
+                        <TextBlock><Run Text="Udfyld "/><Italic><Run Text="enten"/></Italic><Run Text=" minimum de 6 første cifre af"/><LineBreak/><Run Text="CPR-nummeret "/><Italic><Run Text="eller"/></Italic><Run Text=" udfyld feltet"/><LineBreak/><Run Text="&quot;Statsforvaltningens journalnummer&quot; nedenunder"/></TextBlock>
+                    </Label>
+                    <TextBox x:Name="txtCPRBirthdate" HorizontalAlignment="Left" Height="27" Margin="218,106,0,0" TextWrapping="Wrap" Text="200993" VerticalAlignment="Top" Width="45"/>
+                    <Label x:Name="lbl" Content="-" Height="27" HorizontalAlignment="Left" Margin="268,107,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtCPRControl" HorizontalAlignment="Left" Height="27" Margin="283,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="55"/>
+
+                    <Label x:Name="lblJournalnumber" Content="Startsforvaltningens journalnummer(*)" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,161,0,0" VerticalAlignment="Top" FontSize="11"/>
+                    <Label x:Name="lblJournalnumberNote" HorizontalAlignment="Left" Margin="19,173,0,0" VerticalAlignment="Top" FontSize="8">
+                        <TextBlock><Run Text="Udfyld "/><Italic><Run Text="enten"/></Italic><Run Text=" minimum de 6 første cifre af"/><LineBreak/><Run Text="CPR-nummeret "/><Italic><Run Text="eller"/></Italic><Run Text=" udfyld feltet"/><LineBreak/><Run Text="&quot;Statsforvaltningens journalnummer&quot; nedenunder"/></TextBlock>
+                    </Label>
+                    <TextBox x:Name="txtJounalnumber" HorizontalAlignment="Left" Height="27" Margin="218,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+                    <TextBox x:Name="txtComment" HorizontalAlignment="Left" Height="96" Margin="218,225,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" FontSize="9"/>
+
+
+                </Grid>
+            </GroupBox>
+
+            <GroupBox x:Name="gbOrder" Header="Bestil" HorizontalAlignment="Left" Margin="64,1608,0,0" Width="391" Height="119" VerticalAlignment="Top">
+                <Grid>
+                    <Label x:Name="lblCopy" Content="Ønskes en kopi af bestllingen?" Height="27" Foreground="#FF0041CB" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="chbCopy" Content="Kvittering" Height="27" HorizontalAlignment="Left" Margin="222,16,0,0" VerticalAlignment="Top"/>
+
+                    <Button x:Name="btnOrder" Content="Send bestilling" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="88"/>
+                    <Button x:Name="btnOrderMore" HorizontalAlignment="Left" Margin="103,54,0,0" VerticalAlignment="Top" Width="153"  Height="37">
+                        <TextBlock TextWrapping="Wrap" TextAlignment="Center">
+                             Send bestilling og ekspresudfyld ny formular
+                        </TextBlock>
+                    </Button>
+                    <Button x:Name="btnReset" Content="Nulstil formular" HorizontalAlignment="Left" Margin="261,61,0,0" VerticalAlignment="Top" Width="88"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+    </ScrollViewer>
+</Window>
